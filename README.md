@@ -134,3 +134,12 @@ GRANT SELECT ON postgres_exporter.pg_stat_replication TO postgres_exporter;
 * To build a copy for your current architecture run `make binary` or just `make`
   This will create a symlink to the just built binary in the root directory.
 * To build release tar balls run `make release`.
+
+####################################################################################
+Hacking :) 
+Here's a hacking:
+
+go build -a  -ldflags "-extldflags '-static' -X main.Version=v0.4.1"  -o postgres_exporter .
+
+Do not use docker !!!
+###################################################################################
