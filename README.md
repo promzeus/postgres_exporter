@@ -135,8 +135,9 @@ GRANT SELECT ON postgres_exporter.pg_stat_replication TO postgres_exporter;
   This will create a symlink to the just built binary in the root directory.
 * To build release tar balls run `make release`.
 
-####################################################################################
-Hacking :) 
+#################################################################################### \\
+
+Hacking :)  \\
 Here's a hacking:
 
 go build -a  -ldflags "-extldflags '-static' -X main.Version=v0.4.1"  -o postgres_exporter .
